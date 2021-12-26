@@ -20,9 +20,6 @@ x_test = x_test.astype('float32') / 255.0
 y_train = to_categorical(y_train)
 y_test = to_categorical(y_test)
 
-
-
-
 # create the model
 model = Sequential([
         Conv2D(filters=32, kernel_size=(3, 3), padding='same',
@@ -53,6 +50,3 @@ model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=50, batch_s
 scores = model.evaluate(x_test, y_test, verbose=0)
 accuracy = scores[1]*100
 print('> %.3f' % accuracy)
-
-
-# He_normal & maxnorm -- 74.100, 72.75,
