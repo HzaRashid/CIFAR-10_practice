@@ -3,8 +3,8 @@ Build a CNN to classify 10 different types of objects in the popular CIFAR-10 da
 - The [dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
 - Helpful resources –> Project specific:   ["How to Develop a CNN from Sctrach for CIFAR-10 Photo Classification"](https://machinelearningmastery.com/how-to-develop-a-cnn-from-scratch-for-cifar-10-photo-classification/), 
                                          
-                     General:   [link 2](https://www.tensorflow.org/api_docs/python/tf/keras),
-                                [link 4](https://towardsdatascience.com/the-most-intuitive-and-easiest-guide-for-convolutional-neural-network-3607be47480)
+                     General:   [Tensorflow.keras library overview](https://www.tensorflow.org/api_docs/python/tf/keras)
+                                [Guide for CNNs](https://towardsdatascience.com/the-most-intuitive-and-easiest-guide-for-convolutional-neural-network-3607be47480)
 
 - This was my first time working keras/tensorflow. After learning the approriate methods in the keras/tensorflow libraries, and the base model implementations provided in the links, I tried builing one of my own, which is the one in this repo. 
 - The base model in this repo performed best using he_normal (truncated normal) distribition compared to normal and [he_uniform](https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeUniform) distributions to initialize the kernels.
