@@ -1,9 +1,10 @@
 # CIFAR-10_practice
-This is an Image Classification project. The goal is to build a Convolutional Neural Network (an arti) to identify 10 types of images based on the object contained in with the popular [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html).
+This is an Image Classification project using the popular [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html). It contains 60,000 images (32x32, rgb) divided into 10 classes (categories) based on the object contained in them.
+
+The goal of this project is to build a [Convolutional Neural Network](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53) to identify the 10 classes of images. 
 
 
 - First time using a deep-learning library -- keras with tensorflow backend. The CIFAR-10 dataset is a great place to start since it is one of the more general datasets out there. 
-- When trying out 'he_normal' (truncated normal), normal, and [he_uniform](https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeUniform), distributions to initialize the layers, the model performed best using 'he_normal'.
 
 - After 50 epochs with the Adam optimizer, the model acheived an accuracy of 85.030%. However, it overfitted the data within 12-15 epochs.
 - After 50 epochs with the SGD optimizer (learning rate: 0.001, momentum: 0.8), the model acheived an accuracy of 79.530%.
