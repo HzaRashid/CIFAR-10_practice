@@ -1,5 +1,5 @@
 # CIFAR-10_practice
-Build a CNN to classify images containing 10 different types of objects in the popular [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html).
+Image Classification: Build a Convolutional Neural Network to identify 10 types of images based on the object contained in with the popular [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html).
 
 
 - First time using a deep-learning library -- keras with tensorflow backend. The CIFAR-10 dataset is a great place to start since it is one of the more general datasets out there. 
