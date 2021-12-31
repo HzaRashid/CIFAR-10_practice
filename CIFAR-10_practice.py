@@ -1,6 +1,5 @@
 # import numpy as np
 # import matplotlib.pyplot as plt
-# from keras.constraints import maxnorm
 # import tensorflow as tf
 # from tensorflow.keras.optimizers import SGD
 from keras.utils.np_utils import to_categorical
@@ -12,8 +11,8 @@ from keras.datasets import cifar10
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()  # load the data – already split
 
 # normalize input data
-x_train = x_train.astype('float32') / 255.0
-x_test = x_test.astype('float32') / 255.0
+x_train = x_train / 255.0
+x_test = x_test / 255.0
 
 # one-hot encode the target values
 y_train = to_categorical(y_train)
@@ -52,13 +51,6 @@ model = Sequential([
         Dense(10, activation='softmax')
     ])
 
-# sgb1 = SGD(learning_rate=0.001, momentum=0.8)
-# sgb2 = SGD(learning_rate=0.01, momentum=0.8)
+
 model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
 model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=50, batch_size=32)
-
-scores = model.evaluate(x_test, y_test, verbose=0)
-accuracy = scores[1]*100
-
-model.summary()
-print('> %.3f' % accuracy)
