@@ -1,4 +1,6 @@
 Article describing the fundamentals of CNNs: https://towardsdatascience.com/intuitively-understanding-convolutions-for-deep-learning-1f6f42faee1
+
+
 Extensive guides: https://machinelearningmastery.com/how-to-develop-a-cnn-from-scratch-for-cifar-10-photo-classification/, https://data-flair.training/blogs/image-classification-deep-learning-project-python-keras/, 
 https://pythonistaplanet.com/cifar-10-image-classification-using-keras/, https://towardsdatascience.com/cifar-10-image-classification-in-tensorflow-5b501f7dc77c
 keras library: https://keras.io/api/
