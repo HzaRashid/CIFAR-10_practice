@@ -44,3 +44,4 @@ model = Sequential([
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=5, batch_size=32)
 
+
