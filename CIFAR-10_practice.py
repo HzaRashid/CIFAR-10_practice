@@ -53,8 +53,4 @@ model = Sequential([
 
 model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
 model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=50, batch_size=32)
-plt.xlabel('Epochs')
-plt.ylabel('Accuracy')
-performance = model.fit_generator(x_train, y_train, validation_data=(x_test, y_test), epochs=50, batch_size=32)
 
-plt.plot(performance['accuracy'], color='green')
