@@ -7,20 +7,4 @@ The goal is to build a [Convolutional Neural Network](https://towardsdatascience
 - This was my first time using a deep-learning library -- keras with tensorflow backend. The CIFAR-10 dataset is a great place to start since it is one of the more general datasets out there, and it is already organized. So most of the time spent on this project goes to optimizing the model and learning the libraries.
 
 - Important to note: there are a lot of standard image classification models that have been applied to this dataset - many of them can be found [here](https://paperswithcode.com/sota/image-classification-on-cifar-10)
-- For the purpose of learning the keras library, I tried making a model from stratch using common techniques for image classification (e.g., stacking convolutional layers, using batch normalization, adding dropout layers), which can be found in [helpful_resources](https://github.com/HzaRashid/CIFAR-10_practice/blob/main/helpful_resources.pdf). Some unique aspects of the model in the main branch of this repo: the kernels were initialized using 'he_normal' (truncated normal) distribution, the input layer was not stacked with another layer, the last convolutional layer was not stacked either, and the stride was set to (2,2) in the last max pooling layer.
-
-## Brief report:
-### The model in main branch:
-  - Trained using the Adam optimizer and only 5 epochs. It achieved an accuracy of 81.560%
- 
-### The model in Patch 1:
-  - This model was more conventional than the one in main branch. All convolutional layers were stacked except for the last one, a max pooling layer was added after each stacked pair of convolutional layers, and also after the last convolutional layer.
-  - It was trained with 50 epochs.
-  - Using the Adam optimizer, the model acheived an accuracy of 85.030%.
-  - Using the SGD optimizer (learning rate: 0.001, momentum: 0.8), the model acheived an accuracy of 79.530%.
-  - Although the model performed better with Adam, it overfitted the data within 12-15 epochs. With SGD, the model's accuracy improved more consistently throughout training, showing signs of overfitting during only the last 10-15 epochs. The most apparent strategies to avoid overfitting so soon (with either optimizer) would be to adjust the dropout layers (or add more), and applying some form of regularization other than dropout, such as maxnorm or L1, L2 regularizations, to begin with.
-
-### The model in Patch 2:
-- Adam optimizer and 5 epochs. 82.630% accuracy.
-
-#### Will be adding accuracy plots to this readme soon.
+- For the purpose of learning the keras library, I tried making a few models from stratch using common techniques for image classification (e.g., stacking convolutional layers, using batch normalization, adding dropout layers), which can be found in [helpful_resources](https://github.com/HzaRashid/CIFAR-10_practice/blob/main/helpful_resources.pdf). 
