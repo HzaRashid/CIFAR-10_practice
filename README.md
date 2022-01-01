@@ -22,5 +22,5 @@ The goal is to build a [Convolutional Neural Network](https://towardsdatascience
 
 ### The model in Patch 2:
 - Adam optimizer and 5 epochs. 82.260% accuracy.
-- 
+
 #### Will be adding accuracy plots to this readme soon.
