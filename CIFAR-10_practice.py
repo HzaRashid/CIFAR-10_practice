@@ -54,3 +54,4 @@ model = Sequential([
 model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
 model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=50, batch_size=32)
 
+
