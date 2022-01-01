@@ -6,6 +6,9 @@ The goal of this project is to build a [Convolutional Neural Network](https://to
 
 - This was my first time using a deep-learning library -- keras with tensorflow backend. The CIFAR-10 dataset is a great place to start since it is one of the more general datasets out there, and the data is already organized – so most of the time spent on the project goes to optimizing the model and learning the libraries.
 
+- Important to note: there are many tried and tested models for this dataset, which can be viewed [here](https://paperswithcode.com/sota/image-classification-on-cifar-10)
+- For the purpose of learning how to work with the keras library, I tried making a model from stratch using common techniques for image classification (e.g, stacking convolutional layers, using batch normalization, adding dropout layers)
+
 ## Brief report:
 - After 50 epochs with the Adam optimizer, the model acheived an accuracy of 85.030%. However, it overfitted the data within 12-15 epochs.
 - After 50 epochs with the SGD optimizer (learning rate: 0.001, momentum: 0.8), the model acheived an accuracy of 79.530%.
