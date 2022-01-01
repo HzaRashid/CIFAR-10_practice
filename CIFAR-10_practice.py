@@ -2,18 +2,17 @@
 # import matplotlib.pyplot as plt
 # import tensorflow as tf
 # from tensorflow.keras.optimizers import SGD
+import matplotlib.pyplot as plt
 from keras.utils.np_utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropout, BatchNormalization
 from keras.datasets import cifar10
-
 
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()  # load the data – already split
 
 # normalize input data
 x_train = x_train / 255.0
 x_test = x_test / 255.0
-
 # one-hot encode the target values
 y_train = to_categorical(y_train)
 y_test = to_categorical(y_test)
@@ -54,3 +53,8 @@ model = Sequential([
 
 model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
 model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=50, batch_size=32)
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+performance = model.fit_generator(x_train, y_train, validation_data=(x_test, y_test), epochs=50, batch_size=32)
+
+plt.plot(performance['accuracy'], color='green')
