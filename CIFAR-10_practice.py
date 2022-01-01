@@ -29,7 +29,9 @@ model = Sequential([
         Dropout(0.2),
 
         Conv2D(filters=256, kernel_size=(3, 3), padding='same', activation='relu', kernel_initializer='he_normal'),
+        BatchNormalization(),
         MaxPooling2D(pool_size=(2, 2), strides=(2, 2)),
+
         Dropout(0.3),
 
         Flatten(),
@@ -41,5 +43,4 @@ model = Sequential([
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=5, batch_size=32)
-
 
