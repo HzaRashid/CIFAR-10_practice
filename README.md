@@ -21,6 +21,6 @@ The goal is to build a [Convolutional Neural Network](https://towardsdatascience
   - Although the model performed better with Adam, it overfitted the data within 12-15 epochs. With SGD, the model's accuracy improved more consistently throughout training, showing signs of overfitting during only the last 10-15 epochs. The most apparent strategies to avoid overfitting so soon (with either optimizer) would be to adjust the dropout layers (or add more), and applying some form of regularization other than dropout, such as maxnorm or L1, L2 regularizations, to begin with.
 
 ### The model in Patch 2:
-- Adam optimizer and 5 epochs. 82.260% accuracy.
+- Adam optimizer and 5 epochs. 82.630% accuracy.
 
 #### Will be adding accuracy plots to this readme soon.
