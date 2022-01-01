@@ -11,7 +11,7 @@ The goal is to build a [Convolutional Neural Network](https://towardsdatascience
 
 ## Brief report:
 ### The model in main branch:
-  - Trained using the Adam optimizer and 5 epochs. It achieved an accuracy of 81.350%
+  - Trained using the Adam optimizer and 5 epochs. It achieved an accuracy of 81.560%
  
 ### The model in Patch 1:
   - This model was more conventional than the one in main branch. All convolutional layers were stacked except for the last one, a max pooling layer was added after each stacked pair of convolutional layers, and also after the last convolutional layer.
