@@ -11,7 +11,7 @@ The goal of this project is to build a [Convolutional Neural Network](https://to
 
 ## Brief report:
 - The model in Patch 1:
-- This model was more conventional than the one in main branch. All convolutional layers were stacked except for the last one, a max pooling layer was added after each stacked pair of convolutional layers, and after the last convolutional layer as well.
+- This model was more conventional than the one in main branch. All convolutional layers were stacked except for the last one, a max pooling layer was added after each stacked pair of convolutional layers, and also after the last convolutional layer.
 - It was trained with 50 epochs.
 - Using the Adam optimizer, the model acheived an accuracy of 85.030%.
 - Using the SGD optimizer (learning rate: 0.001, momentum: 0.8), the model acheived an accuracy of 79.530%.
