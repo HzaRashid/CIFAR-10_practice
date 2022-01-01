@@ -21,4 +21,4 @@ The goal of this project is to build a [Convolutional Neural Network](https://to
   - Trained using the Adam optimizer and 5 epochs. It achieved an accuracy of 81.350%
 
 
-- Will be adding accuracy plots to this readme soon.
+#### Will be adding accuracy plots to this readme soon.
