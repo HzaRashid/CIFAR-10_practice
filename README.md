@@ -18,7 +18,7 @@ The goal is to build a [Convolutional Neural Network](https://towardsdatascience
   - It was trained with 50 epochs.
   - Using the Adam optimizer, the model acheived an accuracy of 85.030%.
   - Using the SGD optimizer (learning rate: 0.001, momentum: 0.8), the model acheived an accuracy of 79.530%.
-  - Although the model performed better with Adam, it overfitted the data within 12-15 epochs. With SGD, the model's accuracy improved more consistently throughout training, showing signs of overfitting during only the last 10-15 epochs. The most apparent strategies to avoid overfitting so soon (with either optimizer) would be to adjust dropout layers, Learning rate, momentum, and batch size, to begin with.
+  - Although the model performed better with Adam, it overfitted the data within 12-15 epochs. With SGD, the model's accuracy improved more consistently throughout training, showing signs of overfitting during only the last 10-15 epochs. The most apparent strategies to avoid overfitting so soon (with either optimizer) would be to adjust the dropout layers (or add more), learning rate, momentum, and batch size, to begin with.
 
 
 #### Will be adding accuracy plots to this readme soon.
